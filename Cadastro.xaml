@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto1.Cadastro"
+             Title="カカロット"
+             BackgroundColor="White">
+            <ScrollView>
+        <VerticalStackLayout
+             Padding="30,0"
+             Spacing="30">
+
+            <!--<Label 
+             Text="F"
+             TextColor="HotPink"
+             FontSize="100"
+             HorizontalOptions="Center"/> -->
+
+            <!--<<Label
+             Text="Praça de alimentação de Caxias"
+             TextColor="HotPink"
+             FontSize="35"
+             HorizontalOptions="Center"
+             HorizontalTextAlignment="Center"
+             />-->
+
+            <Image Source="https://i.pinimg.com/736x/59/4a/f4/594af478724e4e1aca1602a1e179c6da.jpg" 
+             WidthRequest="180" 
+             HeightRequest="200"
+             />
+
+            <Label
+             Text="Sabor que não dá bug: sempre funciona na sua fome"
+             TextColor="DarkOrange"
+             FontSize="20"
+             HorizontalOptions="Center"
+             HorizontalTextAlignment="Center"
+             />
+
+            <Entry
+             x:Name="txtNUsuario"
+             Placeholder="Usuário"
+             PlaceholderColor="White"
+             BackgroundColor="DarkOrange"
+             Keyboard="Text"
+             />
+            
+            <Entry
+             x:Name="txtEmail"
+             Placeholder="E-mail"
+             PlaceholderColor="White"
+             BackgroundColor="DarkOrange"
+             Keyboard="Text"
+             />
+            
+            <Entry
+             x:Name="txtSenha"
+             Placeholder="Senha"
+             PlaceholderColor="White"
+             BackgroundColor="DarkOrange"
+             Keyboard="Text"
+             />
+            
+            <Entry
+             x:Name="txtCSenha"
+             Placeholder="Confirmar Senha"
+             PlaceholderColor="White"
+             BackgroundColor="DarkOrange"
+             Keyboard="Text"
+             TextChanged="txtCSenha_Completed"
+             />
+            
+            <Button
+             x:Name="btnCadastra"
+             Clicked="btnCadastra_Clicked"
+             Text="Cadastrar"
+             TextColor="White"
+             BackgroundColor="DarkOrange"
+             FontAttributes="Bold"
+             CornerRadius="30"
+             IsEnabled="false"
+             />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+</ContentPage>

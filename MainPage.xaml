@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto1.MainPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="30">
+
+            <!--<Label 
+                Text="F"
+                TextColor="HotPink"
+                FontSize="200"
+                HorizontalOptions="Center"/>-->
+
+            <Image Source="https://i.pinimg.com/736x/59/4a/f4/594af478724e4e1aca1602a1e179c6da.jpg" 
+            WidthRequest="200" 
+            HeightRequest="300"
+            />
+
+            <Label 
+            Text="LancheBall Z"
+            TextColor="DarkOrange"
+            FontSize="50"
+            HorizontalOptions="Center"/>
+
+            <Button
+             Clicked="Cadastar_Clicked"
+             Text="Cadastrar"
+             TextColor="White"
+             FontAttributes="Bold"
+             CornerRadius="30"
+             />
+            
+            <Button Text="Login com Google"
+             TextColor="White"
+             FontAttributes="Bold"
+             CornerRadius="30"/>
+
+            <Button Text="Login com Apple"
+             TextColor="White"
+             FontAttributes="Bold"
+             CornerRadius="30"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
